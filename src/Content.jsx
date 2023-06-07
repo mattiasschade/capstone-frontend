@@ -5,6 +5,7 @@ import { Login } from "./Login"
 import { Welcome } from "./Welcome"
 import { LogoutLink } from "./LogoutLink"
 import { CreatePaymentInformation } from './CreatePaymentInfo';
+import { CreateDonation } from './CreateDonation'
 
 export function Content() {
   return (
@@ -14,6 +15,7 @@ export function Content() {
     <LogoutLink />
     <Welcome />
     <CreatePaymentInformation />
+    <CreateDonation />
     </div>
   )
 }
