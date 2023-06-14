@@ -9,6 +9,7 @@ import { CreateDonation } from './CreateDonation'
 import { Routes, Route } from "react-router-dom";
 import { About } from "./About.jsx";
 import { ShowUser } from "./ShowUser.jsx";
+import { ShowDonations } from "./ShowDonation.jsx"
 import Container from 'react-bootstrap/Container';
 // import { About } from "./About"
 
@@ -25,6 +26,7 @@ export function Content() {
         <Route path="/createdonation" element={<CreateDonation />} />
         <Route path="/about" element={<About />}/>
         <Route path="/profile" element={<ShowUser />}/>
+        <Route path="/donations" element={<ShowDonations />}/>
       </Routes>
     </div>
     

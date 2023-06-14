@@ -14,7 +14,7 @@ export function HoseHero() {
     <div>
     
     <Card className="bg-dark text-white" >
-      <Parallax translateX={[-5, 2]}>
+      <Parallax translateX={[-3, 3]}>
       <Card.Img src={img} alt="Squad" />
       </Parallax>
       <Card.Body className="card-img-overlay">
@@ -29,9 +29,7 @@ export function HoseHero() {
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
+          
           <br/>
 
             <div className="row">
