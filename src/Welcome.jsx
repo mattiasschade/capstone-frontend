@@ -15,18 +15,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   crossOrigin="anonymous"
 />
 export function Welcome () {
+  
   return(
     <Container fluid width="100%">
-      <br/>
-      <br/>
+      
     <div>
       <div>
         <Hero />
       </div>
 
-      <br/>
-      <br/>
-      <Card style={{ width: '100%' }}>
+    
+      <Card style={{ width: '100%', position: "relative"}}>
       <Card.Body>
         <br/>
         <br/>
@@ -47,7 +46,7 @@ export function Welcome () {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          height: "100%"
+          height: "100%",
         }}>
           <Diamond
             color="#ad8f43"

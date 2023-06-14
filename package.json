@@ -18,7 +18,8 @@
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.12.1"
+    "react-router-dom": "^6.12.1",
+    "react-scroll-parallax": "^3.4.2"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.6",

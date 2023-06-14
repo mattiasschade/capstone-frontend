@@ -3,15 +3,24 @@ import Card from 'react-bootstrap/Card';
 import img from "./assets/hose_squad.jpg";
 import "./HoseHero.css";
 import { HeartPulseFill, CurrencyDollar, LightbulbFill} from "react-bootstrap-icons";
+import { Link } from 'react-router-dom';
+import { Parallax, useParallax } from 'react-scroll-parallax';
+import { ParallaxBanner } from 'react-scroll-parallax';
+
 
 
 export function HoseHero() {
   return (
-  
-    <Card className="bg-dark text-white">
+    <div>
+    
+    <Card className="bg-dark text-white" >
+      <Parallax translateX={[-5, 2]}>
       <Card.Img src={img} alt="Squad" />
+      </Parallax>
       <Card.Body className="card-img-overlay">
           <Card.Text className="card-title"></Card.Text>
+          <br/>
+          <br/>
           <br/>
           <br/>
           <Card.Title className="card-title"><h1><u>GET INVOLVED</u></h1></Card.Title>
@@ -22,16 +31,24 @@ export function HoseHero() {
             <br/>
             <br/>
             <br/>
+            <br/>
+          <br/>
 
             <div className="row">
             <div className="col">
-            <HeartPulseFill size={116}/>
+            <Link to="/login">
+            <HeartPulseFill size={116} style={{color: "white"}}/>
+            </Link>
             </div>
             <div className="col">
-            <CurrencyDollar size={116}/>
+            <Link to="/createdonation">
+            <CurrencyDollar size={116} style={{color: "white"}}/>
+            </Link>
             </div>
             <div className="col">
-              <LightbulbFill size={116}/>
+            <Link to="/about">
+            <LightbulbFill size={116} style={{color: "white"}}/>
+            </Link>
             </div>
             </div>
           </Card.Text>
@@ -48,8 +65,9 @@ export function HoseHero() {
               </div>
             </div>
           </Card.Text>
+          
       </Card.Body>
-    </Card> 
-   
+    </Card>
+    </div>
   );
 }

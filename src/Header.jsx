@@ -2,12 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { LogoutLink } from "./LogoutLink.jsx";
 
+
 export function Header() {
   return (
-    <div className="container=fluid sticky-top">
-      <nav className="navbar navbar-expand-lg sticky-top" style={{backgroundColor: "#ad8f43"}}>
+    <div className="container=fluid">
+      <nav className="navbar navbar-expand-lg navbar-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/welcome">Home</a>
+    <a className="navbar-brand" href="/welcome"><img src="https://golftellicovillage.com/wp-content/uploads/2020/11/image-300x153.png" width="100px"/> Home</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
