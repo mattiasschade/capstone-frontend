@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { NewDonation} from "./NewDonation";
+import { NewDonation} from "./NewDonation.jsx";
 
 export function CreateDonation() {
   const [paymentInformation, setPaymentInformation] = useState([]);
